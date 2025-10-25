@@ -1439,20 +1439,7 @@ function App() {
          reset: 'Restablecer',
          close: 'Cerrar'
        },
-      home: {
-        understandingYourHealth: 'Entendiendo su Salud',
-        tbiTitle: 'Lesión Cerebral Traumática',
-        tbiDesc: 'Entienda las causas, los síntomas y los tratamientos de vanguardia para las lesiones cerebrales traumáticas.',
-        tbiCta: 'Descubrir Tratamientos →',
-        neuroTitle: 'Neuroanatomía y Neurodegeneración',
-        neuroDesc: 'Explore la estructura y función del cerebro y condiciones neurológicas progresivas como el Alzheimer y el Parkinson.',
-        neuroCta: 'Leer Más →',
-        painTitle: 'Dolor Crónico y Trastornos de la Columna',
-        painDesc: 'Explore nuestro enfoque avanzado y multidisciplinario para tratar el dolor crónico y condiciones complejas de la columna.',
-        painCta: 'Mejorar el Bienestar →',
-        disclaimerTitle: 'Descargo de Responsabilidad Médica',
-        disclaimerText: 'La información proporcionada en este sitio web es solo con fines informativos y educativos y no pretende ser asesoramiento médico. No debe utilizarse como sustituto del diagnóstico o tratamiento profesional. Siempre busque el consejo de su médico u otro proveedor de atención médica calificado con cualquier pregunta que pueda tener sobre una afección médica o tratamiento. No ignore el consejo médico profesional ni retrase su búsqueda debido a algo que haya leído en este sitio web.'
-       },
+      
       home: {
         understandingYourHealth: 'Entendiendo su Salud',
         tbiTitle: 'Lesión Cerebral Traumática',
@@ -2211,20 +2198,7 @@ function App() {
         reset: 'रीसेट करें',
                  close: 'बंद करें'
        },
-      home: {
-        understandingYourHealth: 'अपने स्वास्थ्य को समझना',
-        tbiTitle: 'दर्दनाक मस्तिष्क की चोट',
-        tbiDesc: 'दर्दनाक मस्तिष्क की चोटों के कारण, लक्षण और उन्नत उपचारों को समझें।',
-        tbiCta: 'उपचार खोजें →',
-        neuroTitle: 'न्यूरोएनाटॉमी और न्यूरोडीजेनेरेशन',
-        neuroDesc: 'मस्तिष्क की संरचना, कार्य और अल्ज़ाइमर व पार्किंसन जैसी प्रगतिशील न्यूरोलॉजिकल स्थितियों का अन्वेषण करें।',
-        neuroCta: 'और पढ़ें →',
-        painTitle: 'पुराना दर्द और रीढ़ की विकृतियाँ',
-        painDesc: 'पुराने दर्द और जटिल रीढ़-संबंधी स्थितियों के इलाज के लिए हमारे उन्नत, बहु-विषयक दृष्टिकोण का अन्वेषण करें।',
-        painCta: 'स्वास्थ्य में सुधार करें →',
-        disclaimerTitle: 'चिकित्सीय अस्वीकरण',
-        disclaimerText: 'इस वेबसाइट पर दी गई जानकारी केवल सूचना और शैक्षिक उद्देश्यों के लिए है और यह चिकित्सा सलाह के रूप में अभिप्रेत नहीं है। इसे पेशेवर निदान या उपचार के विकल्प के रूप में उपयोग नहीं किया जाना चाहिए। किसी भी चिकित्सा स्थिति या उपचार के बारे में प्रश्न होने पर हमेशा अपने चिकित्सक या अन्य योग्य स्वास्थ्य सेवा प्रदाता की सलाह लें। इस वेबसाइट पर पढ़ी गई किसी भी बात के कारण पेशेवर चिकित्सा सलाह की उपेक्षा न करें या उसे प्राप्त करने में देरी न करें।'
-       },
+      
       home: {
         understandingYourHealth: 'अपने स्वास्थ्य को समझना',
         tbiTitle: 'दर्दनाक मस्तिष्क की चोट',

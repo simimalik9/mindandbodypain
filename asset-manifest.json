@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mindandbodypain/static/css/main.bd92265d.css",
-    "main.js": "/mindandbodypain/static/js/main.3f72d0b6.js",
+    "main.css": "/mindandbodypain/static/css/main.13177d05.css",
+    "main.js": "/mindandbodypain/static/js/main.f641bda2.js",
     "static/media/braintmshero.jpg": "/mindandbodypain/static/media/braintmshero.3cd721281011b3dc6385.jpg",
     "index.html": "/mindandbodypain/index.html",
-    "main.bd92265d.css.map": "/mindandbodypain/static/css/main.bd92265d.css.map",
-    "main.3f72d0b6.js.map": "/mindandbodypain/static/js/main.3f72d0b6.js.map"
+    "main.13177d05.css.map": "/mindandbodypain/static/css/main.13177d05.css.map",
+    "main.f641bda2.js.map": "/mindandbodypain/static/js/main.f641bda2.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd92265d.css",
-    "static/js/main.3f72d0b6.js"
+    "static/css/main.13177d05.css",
+    "static/js/main.f641bda2.js"
   ]
 }

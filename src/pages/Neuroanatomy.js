@@ -242,7 +242,7 @@ function Neuroanatomy({ t }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/neuroanatomybackground.jpg'})` }}>
+t      <section className="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/neuroanatomybackground.jpg'})` }}>
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-6xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">

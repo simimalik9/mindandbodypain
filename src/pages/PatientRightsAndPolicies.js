@@ -185,28 +185,28 @@ function PatientRightsAndPolicies({ t }) {
             </div>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="/Reg 2025.pdf" 
+                href={process.env.PUBLIC_URL + '/Reg 2025.pdf'} 
                 download
                 className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition-colors"
               >
                 {t?.workInjuryPage?.forms?.registration || 'Registration Form'}
               </a>
               <a 
-                href="/Referral MBPC.docx.pdf" 
+                href={process.env.PUBLIC_URL + '/Referral MBPC.docx.pdf'} 
                 download
                 className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition-colors"
               >
                 {t?.workInjuryPage?.forms?.referral || 'Physician Referral Form'}
               </a>
               <a 
-                href="/Records Release To MBPC.docx.pdf" 
+                href={process.env.PUBLIC_URL + '/Records Release To MBPC.docx.pdf'} 
                 download
                 className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition-colors"
               >
                 {t?.workInjuryPage?.forms?.releaseTo || 'Release Records TO Mind and Body Pain Clinic'}
               </a>
               <a 
-                href="/Records Release from MBPC.pdf" 
+                href={process.env.PUBLIC_URL + '/Records Release from MBPC.pdf'} 
                 download
                 className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition-colors"
               >

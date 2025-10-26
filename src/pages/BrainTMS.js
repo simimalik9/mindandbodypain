@@ -10,7 +10,10 @@ function BrainTMS({ t }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-40 pb-40 bg-black bg-braintms-hero bg-no-repeat bg-center bg-[size:80%_auto]">
+      <section
+        className="relative pt-40 pb-40 bg-black bg-no-repeat bg-center bg-[size:80%_auto]"
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/braintmshero.jpg'})` }}
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-wide mb-4">
             {t?.brainTMS?.heroTitle || 'Brain TMS'}

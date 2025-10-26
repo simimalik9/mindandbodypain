@@ -71,7 +71,7 @@ const InteractiveBrain = ({ t }) => {
         className="w-full h-auto"
         viewBox="0 0 2048 2048"
       >
-        <image href="/partsofbrain.png" x="0" y="0" width="2048" height="2048" />
+        <image href={process.env.PUBLIC_URL + '/partsofbrain.png'} x="0" y="0" width="2048" height="2048" />
         {regions.map((region) => (
           <polygon
             key={region.name}

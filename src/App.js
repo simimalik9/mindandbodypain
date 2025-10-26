@@ -1571,9 +1571,9 @@ function App() {
           name: 'Inyección epidural cervical',
           summary: 'Anesthetic and steroid medication is injected into the epidural space in the neck to treat pain caused by irritated spinal nerves, often radiating to the shoulders and arms.'
         },
-        'cervical-facet': {
-          name: 'Inyección facetaria cervical',
-          summary: 'Medicamento en articulaciones facetarias del cuello para diagnosticar y aliviar inflamación y dolor.',
+        'cervical-facet-epidural-desc': {
+          name: 'Inyección epidural cervical (Descripción)',
+          summary: 'Descripción general del procedimiento epidural cervical.',
           detailedDescription: `
         <h4 style="color: #374151; font-weight: 600; margin-top: 16px; margin-bottom: 12px;">¿Qué es una inyección epidural de esteroides?</h4>
         <p style="color: #374151; margin-bottom: 16px;">La inyección epidural de esteroides consiste en aplicar un anestésico y un antiinflamatorio (esteroide) en el espacio epidural para tratar el dolor causado por la irritación de los nervios espinales. Este espacio rodea el saco dural que contiene el líquido cefalorraquídeo y por donde pasan las raíces nerviosas.</p>
@@ -2730,7 +2730,7 @@ function App() {
    };
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<AppLayout

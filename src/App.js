@@ -62,7 +62,7 @@ const AppLayout = ({
       }}
     />
     {/* Navigation */}
-    <nav className="bg-white border-b border-gray-100/50 sticky top-0 z-50">
+    <nav className="bg-white border-b border-gray-100/50 sticky top-0 z-[1000] relative">
       <div className="w-full px-0 sm:px-2 lg:px-4">
         {/* Top bar for language and accessibility */}
         <div className="flex justify-end items-center h-6 pt-1">
@@ -124,7 +124,7 @@ const AppLayout = ({
                 {/* Original Logo Image */}
                 <div className="flex items-center justify-center">
                   <img 
-                    src="/logo.png" 
+                    src={process.env.PUBLIC_URL + '/logo.png'} 
                     alt="Mind and Body Pain Clinic Logo" 
                     className="h-12 w-auto object-contain object-left"
                     style={{ marginRight: '-10px' }}
@@ -159,7 +159,8 @@ const AppLayout = ({
             {/* Services Dropdown */}
             <div className="relative services-dropdown">
               <button
-                onClick={() => setServicesOpen(!servicesOpen)}
+                onMouseDown={(e) => e.stopPropagation()}
+                onClick={(e) => { e.stopPropagation(); setServicesOpen(!servicesOpen); }}
                 className="flex items-center text-gray-700 hover:text-teal-600 px-2 py-2 text-sm font-medium transition-all duration-300 hover:bg-teal-50/80 whitespace-nowrap"
               >
                 {t.nav.services}
@@ -168,17 +169,17 @@ const AppLayout = ({
                 </svg>
               </button>
               {servicesOpen && (
-                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
-                  <Link to="/traumatic-brain-injury" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setServicesOpen(false)} onClick={() => setServicesOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-t-lg">
+                <div onMouseDown={(e) => e.stopPropagation()} className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 z-[1100] pointer-events-auto">
+                  <Link to="/traumatic-brain-injury" className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-t-lg">
                     {t.nav.traumaticBrainInjury}
                   </Link>
-                  <Link to="/pain-management" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setServicesOpen(false)} onClick={() => setServicesOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors">
+                  <Link to="/pain-management" className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors">
                     {t.nav.silverCreekSurgery}
                   </Link>
-                  <Link to="/brain-tms" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setServicesOpen(false)} onClick={() => setServicesOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors">
+                  <Link to="/brain-tms" className="block w/full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors">
                     {t.nav.tms}
                   </Link>
-                  <Link to="/all-treatments" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setServicesOpen(false)} onClick={() => setServicesOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-b-lg">
+                  <Link to="/all-treatments" className="block w/full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-b-lg">
                     {t.nav.allTreatments}
                     </Link>
                   </div>
@@ -187,7 +188,8 @@ const AppLayout = ({
           {/* Patient Portal Dropdown */}
           <div className="relative patient-portal-dropdown">
             <button
-              onClick={() => setPatientPortalOpen(!patientPortalOpen)}
+              onMouseDown={(e) => e.stopPropagation()}
+              onClick={(e) => { e.stopPropagation(); setPatientPortalOpen(!patientPortalOpen); }}
               className="flex items-center text-gray-700 hover:text-teal-600 px-2 py-2 text-sm font-medium transition-all duration-300 hover:bg-teal-50/80 whitespace-nowrap"
             >
               {t.nav.patientPortal}
@@ -196,11 +198,11 @@ const AppLayout = ({
               </svg>
             </button>
             {patientPortalOpen && (
-              <div className="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
-                <Link to="/pre-operative-instructions" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setPatientPortalOpen(false)} onClick={() => setPatientPortalOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-t-lg">
+              <div onMouseDown={(e) => e.stopPropagation()} className="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-[1100] pointer-events-auto">
+                <Link to="/pre-operative-instructions" className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-t-lg">
                   {t.nav.preOperativeInstructions}
                 </Link>
-                <Link to="/patient-rights-and-policies" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setPatientPortalOpen(false)} onClick={() => setPatientPortalOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-b-lg">
+                <Link to="/patient-rights-and-policies" className="block w/full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-b-lg">
                   {t.nav.patientRightsAndPolicies}
                 </Link>
                 </div>
@@ -210,7 +212,8 @@ const AppLayout = ({
             {/* Education Dropdown */}
             <div className="relative education-dropdown">
               <button
-                onClick={() => setEducationOpen(!educationOpen)}
+                onMouseDown={(e) => e.stopPropagation()}
+                onClick={(e) => { e.stopPropagation(); setEducationOpen(!educationOpen); }}
                 className="flex items-center text-gray-700 hover:text-teal-600 px-2 py-2 text-sm font-medium transition-all duration-300 hover:bg-teal-50/80 whitespace-nowrap"
               >
                 {t.nav.education}
@@ -219,11 +222,11 @@ const AppLayout = ({
                 </svg>
               </button>
               {educationOpen && (
-                <div className="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
-                  <Link to="/neuroanatomy" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setEducationOpen(false)} onClick={() => setEducationOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-t-lg">
+                <div onMouseDown={(e) => e.stopPropagation()} className="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-[1100] pointer-events-auto">
+                  <Link to="/neuroanatomy" className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-t-lg">
                     {t.nav.neuroanatomy}
                   </Link>
-                  <Link to="/innovative-integrative-medicine" onClickCapture={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onTouchStart={() => { setShowLanguageDropdown(false); setMobileMenuOpen(false); setServicesOpen(false); setPatientPortalOpen(false); setEducationOpen(false); }} onMouseDown={() => setEducationOpen(false)} onClick={() => setEducationOpen(false)} className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-b-lg">
+                  <Link to="/innovative-integrative-medicine" className="block w/full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 transition-colors rounded-b-lg">
                     {t.nav.innovativeIntegrativeMedicine}
                   </Link>
                 </div>
@@ -493,7 +496,7 @@ function App() {
     }));
   };
 
-  // Close language dropdown when clicking outside
+  // Close language dropdowns/menus when clicking outside (use 'click' to avoid pre-click interference)
   React.useEffect(() => {
     const handleClickOutside = (event) => {
       if (showLanguageDropdown && !event.target.closest('.language-dropdown')) {
@@ -516,9 +519,9 @@ function App() {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('click', handleClickOutside, true);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('click', handleClickOutside, true);
     };
   }, [showLanguageDropdown, accessibilitySettings.showAccessibilityPanel, mobileMenuOpen, servicesOpen, patientPortalOpen, educationOpen]);
 
@@ -1497,7 +1500,7 @@ function App() {
           duration: 'Duración del tratamiento',
           sessions: 'Número total de sesiones',
           details: 'Detalles del protocolo',
-          bestFor: 'Ideal para',
+          bestFor: 'Best For',
           fdaApproved: 'FDA Approved',
           since: 'Desde 2008',
           ourRecommended: 'Nuestra recomendación',
@@ -1566,7 +1569,11 @@ function App() {
       painManagementProcedures: {
         'cervical-epidural': {
           name: 'Inyección epidural cervical',
-          summary: 'Se inyecta anestésico y esteroide en el espacio epidural del cuello para tratar dolor por irritación de nervios espinales.',
+          summary: 'Anesthetic and steroid medication is injected into the epidural space in the neck to treat pain caused by irritated spinal nerves, often radiating to the shoulders and arms.'
+        },
+        'cervical-facet': {
+          name: 'Inyección facetaria cervical',
+          summary: 'Medicamento en articulaciones facetarias del cuello para diagnosticar y aliviar inflamación y dolor.',
           detailedDescription: `
         <h4 style="color: #374151; font-weight: 600; margin-top: 16px; margin-bottom: 12px;">¿Qué es una inyección epidural de esteroides?</h4>
         <p style="color: #374151; margin-bottom: 16px;">La inyección epidural de esteroides consiste en aplicar un anestésico y un antiinflamatorio (esteroide) en el espacio epidural para tratar el dolor causado por la irritación de los nervios espinales. Este espacio rodea el saco dural que contiene el líquido cefalorraquídeo y por donde pasan las raíces nerviosas.</p>
@@ -2513,7 +2520,7 @@ function App() {
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
               <video
                     id="hero-video"
-                    src="/FullSizeRender.MP4"
+                    src={process.env.PUBLIC_URL + '/FullSizeRender.MP4'}
                 className="w-full h-full object-cover pointer-events-none"
                     autoPlay
                     loop
@@ -2548,7 +2555,7 @@ function App() {
       <section id="meet-dr-singh" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
           <div className="flex justify-center items-center">
-            <img src="/harpreet-singh.jpg" alt="Dr. Harpreet Singh" className="w-full max-w-md h-auto object-cover"/>
+            <img src={process.env.PUBLIC_URL + '/harpreet-singh.jpg'} alt="Dr. Harpreet Singh" className="w-full max-w-md h-auto object-cover"/>
           </div>
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 tracking-tight">{t.home?.meet?.heading || 'Meet Dr. Harpreet Singh'}</h2>
@@ -2560,7 +2567,7 @@ function App() {
             <div className="mb-4">
               <div className="flex flex-wrap gap-8 items-center justify-center md:justify-start">
                 <img
-                  src="/ABPMRlogo.png"
+                  src={process.env.PUBLIC_URL + '/ABPMRlogo.png'}
                   alt="ABPMR Board Certified"
                   className="h-20 w-auto object-contain"
                   onError={(e) => {
@@ -2568,7 +2575,7 @@ function App() {
                   }}
                 />
                 <img
-                  src="/ABIMlogo.jpg"
+                  src={process.env.PUBLIC_URL + '/ABIMlogo.jpg'}
                   alt="ABIM Board Certified"
                   className="h-20 w-auto object-contain"
                   onError={(e) => {
@@ -2576,7 +2583,7 @@ function App() {
                   }}
                 />
                 <img
-                  src="/ABPNlogo.png"
+                  src={process.env.PUBLIC_URL + '/ABPNlogo.png'}
                   alt="ABPN Board Certified"
                   className="h-20 w-auto object-contain"
                   onError={(e) => {
@@ -2584,7 +2591,7 @@ function App() {
                   }}
                 />
                 <img
-                  src="/ABAlogo.webp"
+                  src={process.env.PUBLIC_URL + '/ABAlogo.webp'}
                   alt="ABA Board Certified"
                   className="h-20 w-auto object-contain"
                   onError={(e) => {
@@ -2615,7 +2622,7 @@ function App() {
       </section>
 
       {/* About and Services Section */}
-      <div className="relative bg-cover bg-center" style={{ backgroundImage: "url('/tealbackground.jpg')" }}>
+      <div className="relative bg-cover bg-center" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/tealbackground.jpg'})` }}>
         <div aria-hidden="true" className="absolute inset-0 bg-teal-800/70" />
         <section id="about-services" className="relative py-24">
           <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -2678,7 +2685,7 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
             <Link to="/traumatic-brain-injury" className="block bg-gray-700 rounded-lg shadow-lg border border-gray-600 hover:shadow-xl hover:border-teal-500 transition-all duration-300 overflow-hidden">
-              <img src="/brain.png" alt="Traumatic Brain Injury" className="w-full h-48 object-contain"/>
+              <img src={process.env.PUBLIC_URL + '/brain.png'} alt="Traumatic Brain Injury" className="w-full h-48 object-contain"/>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-4">{t.home?.tbiTitle || 'Traumatic Brain Injury'}</h3>
                 <p className="text-sm text-gray-300 mb-6 font-light">{t.home?.tbiDesc || 'Understand the causes, symptoms, and cutting-edge treatments for traumatic brain injuries.'}</p>
@@ -2687,7 +2694,7 @@ function App() {
             </Link>
             {/* Card 2 */}
             <Link to="/neuroanatomy" className="block bg-gray-700 rounded-lg shadow-lg border border-gray-600 hover:shadow-xl hover:border-teal-500 transition-all duration-300 overflow-hidden">
-              <img src="/neurodeg.png" alt="Neuroanatomy and Neurodegeneration" className="w-full h-48 object-contain"/>
+              <img src={process.env.PUBLIC_URL + '/neurodeg.png'} alt="Neuroanatomy and Neurodegeneration" className="w-full h-48 object-contain"/>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-4">{t.home?.neuroTitle || 'Neuroanatomy and Neurodegeneration'}</h3>
             <p className="text-sm text-gray-300 mb-6 font-light">{t.home?.neuroDesc || "Explore brain structure, function, and progressive neurological conditions like Alzheimer's and Parkinson's."}</p>
@@ -2696,7 +2703,7 @@ function App() {
             </Link>
             {/* Card 3 */}
             <Link to="/pain-management" className="block bg-gray-700 rounded-lg shadow-lg border border-gray-600 hover:shadow-xl hover:border-teal-500 transition-all duration-300 overflow-hidden">
-              <img src="/chronicpain.png" alt="Chronic Pain and Spine Disorders" className="w-full h-48 object-contain"/>
+              <img src={process.env.PUBLIC_URL + '/chronicpain.png'} alt="Chronic Pain and Spine Disorders" className="w-full h-48 object-contain"/>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-4">{t.home?.painTitle || 'Chronic Pain and Spine Disorders'}</h3>
                 <p className="text-sm text-gray-300 mb-6 font-light">{t.home?.painDesc || 'Explore our advanced, multidisciplinary approach to treating chronic pain and complex spine-related conditions.'}</p>
@@ -2723,7 +2730,7 @@ function App() {
    };
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<AppLayout

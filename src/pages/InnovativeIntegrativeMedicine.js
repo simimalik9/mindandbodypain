@@ -156,7 +156,7 @@ function InnovativeIntegrativeMedicine({ t }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/innovativemedicine.jpg')" }}>
+      <section className="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/innovativemedicine.jpg'})` }}>
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
@@ -296,25 +296,25 @@ function InnovativeIntegrativeMedicine({ t }) {
                 <div className="mt-8 mb-6">
                   <div className="grid grid-cols-4 gap-8 justify-items-center max-w-6xl mx-auto">
                     <img
-                      src="/pills-package.jpg"
+                      src={process.env.PUBLIC_URL + '/pills-package.jpg'}
                       alt="Traditional Medicine"
                       className="w-48 h-48 object-cover rounded-lg border-2 border-teal-300 shadow-lg"
                       onError={(e) => { e.target.style.display = 'none'; }}
                     />
                     <img
-                      src="/supplements.jpg"
+                      src={process.env.PUBLIC_URL + '/supplements.jpg'}
                       alt="Nutritional Supplements"
                       className="w-48 h-48 object-cover rounded-lg border-2 border-teal-300 shadow-lg"
                       onError={(e) => { e.target.style.display = 'none'; }}
                     />
                     <img
-                      src="/physicaltherapy.jpg"
+                      src={process.env.PUBLIC_URL + '/physicaltherapy.jpg'}
                       alt="Physical Therapy"
                       className="w-48 h-48 object-cover rounded-lg border-2 border-teal-300 shadow-lg"
                       onError={(e) => { e.target.style.display = 'none'; }}
                     />
                     <img
-                      src="/meditation.jpg"
+                      src={process.env.PUBLIC_URL + '/meditation.jpg'}
                       alt="Meditation"
                       className="w-48 h-48 object-cover rounded-lg border-2 border-teal-300 shadow-lg"
                       onError={(e) => { e.target.style.display = 'none'; }}
@@ -328,7 +328,7 @@ function InnovativeIntegrativeMedicine({ t }) {
 
 
           {/* Innovative Medicine Section */}
-          <div className="relative mt-16 py-16 bg-cover bg-center" style={{ backgroundImage: "url('/tealbackground.jpg')" }}>
+          <div className="relative mt-16 py-16 bg-cover bg-center" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/tealbackground.jpg'})` }}>
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">

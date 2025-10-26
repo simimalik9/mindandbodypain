@@ -146,7 +146,7 @@ function TraumaticBrainInjury({ t }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center text-white py-32 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/tbiherosection.avif')" }}>
+      <section className="relative bg-cover bg-center text-white py-32 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/tbiherosection.avif'})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
@@ -365,7 +365,7 @@ function TraumaticBrainInjury({ t }) {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Brain MRI Card */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-                <img src="/brainMRIreal.jpg" alt="Brain MRI scan" className="w-full h-48 object-contain"/>
+                <img src={process.env.PUBLIC_URL + '/brainMRIreal.jpg'} alt="Brain MRI scan" className="w-full h-48 object-contain"/>
                 <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{t?.tbiDiagnostics?.brainMRI?.title || 'Brain MRI'}</h3>
                 <p className="text-gray-700 leading-relaxed text-sm">
@@ -375,7 +375,7 @@ function TraumaticBrainInjury({ t }) {
               </div>
               {/* EEG Card */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-                <img src="/eegreal.jpg" alt="EEG brain wave monitoring" className="w-full h-48 object-contain"/>
+                <img src={process.env.PUBLIC_URL + '/eegreal.jpg'} alt="EEG brain wave monitoring" className="w-full h-48 object-contain"/>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{t?.tbiDiagnostics?.qEEG?.title || 'qEEG (Brain Mapping)'}</h3>
                 <p className="text-gray-700 leading-relaxed text-sm">
@@ -385,7 +385,7 @@ function TraumaticBrainInjury({ t }) {
               </div>
               {/* VNG Card */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-                <img src="/vngreal.png" alt="VNG testing equipment" className="w-full h-48 object-contain"/>
+                <img src={process.env.PUBLIC_URL + '/vngreal.png'} alt="VNG testing equipment" className="w-full h-48 object-contain"/>
                 <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{t?.tbiDiagnostics?.vng?.title || 'VNG'}</h3>
                 <p className="text-gray-700 leading-relaxed text-sm">
@@ -441,7 +441,7 @@ function TraumaticBrainInjury({ t }) {
               {/* Steroid Injection Card */}
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{t?.tbiTreatmentOptions?.steroidTitle || 'Steroid Injections'}</h3>
-                <img src="/steroid.jpg" alt="Steroid Injection Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
+                <img src={process.env.PUBLIC_URL + '/steroid.jpg'} alt="Steroid Injection Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
                 <div className="text-gray-700 text-sm space-y-4">
                   <p>
                     {t?.tbiTreatmentOptions?.steroidDesc1 || 'Corticosteroid injections are a common treatment used to provide fast and effective relief from pain caused by inflammation in the spine or joints. Inflammation is often the source of pain when nerves, discs, or joint spaces become irritated and swollen. By delivering medication directly to the affected area, corticosteroid injections help reduce this irritation, allowing the surrounding tissues to calm down and function more normally.'}
@@ -452,7 +452,7 @@ function TraumaticBrainInjury({ t }) {
               {/* PRP Therapy Card */}
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{t?.tbiTreatmentOptions?.prpTitle || 'PRP Therapy'}</h3>
-                <img src="/PRP.jpg" alt="PRP Therapy Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
+                <img src={process.env.PUBLIC_URL + '/PRP.jpg'} alt="PRP Therapy Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
                 <div className="text-gray-700 text-sm space-y-4">
                   <p>
                     {t?.tbiTreatmentOptions?.prpDesc1 || "Platelet-Rich Plasma (PRP) therapy is a regenerative treatment that uses your body's own natural healing abilities to repair damaged tissues and reduce pain. The process begins with a small sample of your blood, which is placed in a centrifuge and spun to concentrate the platelets. These platelets are rich in growth factors — powerful proteins that stimulate tissue repair, reduce inflammation, and support healing in joints, ligaments, tendons, and discs. By injecting this concentrated solution directly into the injured or painful area, PRP helps the body accelerate its natural recovery process."}

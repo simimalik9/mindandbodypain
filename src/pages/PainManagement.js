@@ -401,7 +401,7 @@ function PainManagement({ t }) {
 
   return (
     <>
-      <section className="relative bg-cover bg-center text-white py-40 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/painhero.jpg')" }}>
+      <section className="relative bg-cover bg-center text-white py-40 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/painhero.jpg'})` }}>
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-4xl mx-auto text-right">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-md">
@@ -431,7 +431,7 @@ function PainManagement({ t }) {
               </p>
                           </div>
             <div className="flex justify-center items-center h-full">
-              <img src="/lumbarmri.jpg" alt="Lumbar MRI showing spine" className="rounded-lg shadow-md object-cover w-full h-80" />
+              <img src={process.env.PUBLIC_URL + '/lumbarmri.jpg'} alt="Lumbar MRI showing spine" className="rounded-lg shadow-md object-cover w-full h-80" />
                           </div>
                         </div>
                       </div>
@@ -445,7 +445,7 @@ function PainManagement({ t }) {
           
           <div className="grid lg:grid-cols-3 gap-8 items-start">
             <div className="max-w-xs mx-auto mt-24">
-              <img src="/spine.jpg" alt="Human Spine" className="rounded-lg shadow-md w-3/4 mx-auto" />
+              <img src={process.env.PUBLIC_URL + '/spine.jpg'} alt="Human Spine" className="rounded-lg shadow-md w-3/4 mx-auto" />
             </div>
             
             <div className="lg:col-span-2">
@@ -534,7 +534,7 @@ function PainManagement({ t }) {
                   {/* Right side - Image */}
                   <div className="flex justify-center items-start">
                     <img
-                      src="/jointinjectionsample.jpg"
+                      src={process.env.PUBLIC_URL + '/jointinjectionsample.jpg'}
                       alt="Joint injection procedure illustration"
                       className="rounded-lg shadow-md w-full max-w-md h-auto object-contain"
                     />
@@ -590,7 +590,7 @@ function PainManagement({ t }) {
               {/* Steroid Injection Card */}
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{t?.painManagementBody?.steroidTitle || 'Steroid Injections'}</h3>
-                <img src="/steroid.jpg" alt="Steroid Injection Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
+                <img src={process.env.PUBLIC_URL + '/steroid.jpg'} alt="Steroid Injection Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
                 <div className="text-gray-700 text-sm space-y-4">
                   <p>
                     {t?.painManagementBody?.steroidDesc1 || 'Corticosteroid injections are a common treatment used to provide fast and effective relief from pain caused by inflammation in the spine or joints. Inflammation is often the source of pain when nerves, discs, or joint spaces become irritated and swollen. By delivering medication directly to the affected area, corticosteroid injections help reduce this irritation, allowing the surrounding tissues to calm down and function more normally.'}
@@ -609,7 +609,7 @@ function PainManagement({ t }) {
               {/* PRP Therapy Card */}
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{t?.painManagementBody?.prpTitle || 'PRP Therapy'}</h3>
-                <img src="/PRP.jpg" alt="PRP Therapy Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
+                <img src={process.env.PUBLIC_URL + '/PRP.jpg'} alt="PRP Therapy Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
                 <div className="text-gray-700 text-sm space-y-4">
                   <p>
                     {t?.painManagementBody?.prpDesc1 || 'Platelet-Rich Plasma (PRP) therapy is a regenerative treatment that uses your body’s own natural healing abilities to repair damaged tissues and reduce pain. The process begins with a small sample of your blood, which is placed in a centrifuge and spun to concentrate the platelets. These platelets are rich in growth factors — powerful proteins that stimulate tissue repair, reduce inflammation, and support healing in joints, ligaments, tendons, and discs. By injecting this concentrated solution directly into the injured or painful area, PRP helps the body accelerate its natural recovery process.'}

@@ -14,7 +14,7 @@ function Footer({ t }) {
           <div className="space-y-4 col-span-1 sm:col-span-2 lg:col-span-1">
             <img
               className="h-10"
-              src="/logo.png"
+              src={process.env.PUBLIC_URL + '/logo.png'}
               alt="Mind and Body Pain Clinic Logo"
             />
             <p className="text-gray-500 text-base">

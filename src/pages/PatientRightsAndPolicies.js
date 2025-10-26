@@ -4,7 +4,7 @@ function PatientRightsAndPolicies({ t }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center text-white py-32 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/patientrightshero.jpg')" }}>
+      <section className="relative bg-cover bg-center text-white py-32 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/patientrightshero.jpg'})` }}>
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">

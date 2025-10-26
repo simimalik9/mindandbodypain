@@ -111,7 +111,7 @@ function AllTreatments({ t }) {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center py-24" style={{ backgroundImage: "url('/tealbackground.jpg')" }}>
+      <section className="relative bg-cover bg-center py-24" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/tealbackground.jpg'})` }}>
         <div className="absolute inset-0 bg-teal-800 opacity-80"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 tracking-tight">

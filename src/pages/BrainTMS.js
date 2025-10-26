@@ -52,7 +52,7 @@ function BrainTMS({ t }) {
                   {t?.brainTMSBody?.howDesc || 'Transcranial Magnetic Stimulation (TMS) Therapy uses an electromagnetic coil to deliver pulses that stimulate underactive regions of the brain in patients with depression. These pulses penetrate about 2–3 centimeters beneath the coil, producing small electrical currents that activate neurons. This activity triggers the release of neurotransmitters and gradually helps reset brain connections, reducing depressive symptoms and supporting overall healing.'}
                 </p>
                 <div className="mt-6">
-                  <img src="/brain-tms-how.png" alt="How Brain TMS Works" className="w-3/4 mx-auto" />
+                  <img src={process.env.PUBLIC_URL + '/brain-tms-how.png'} alt="How Brain TMS Works" className="w-3/4 mx-auto" />
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ function BrainTMS({ t }) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               {/* Left Column: Our Approach */}
               <div className="text-left">
-                <img src="/aftertms.jpg" alt="Brain scan after TMS treatment" className="w-3/4 mx-auto rounded-lg shadow-md mb-8" />
+                <img src={process.env.PUBLIC_URL + '/aftertms.jpg'} alt="Brain scan after TMS treatment" className="w-3/4 mx-auto rounded-lg shadow-md mb-8" />
                 <h2 className="text-2xl font-bold text-white mb-4">{t?.brainTMSBody?.approachTitle || 'Our Approach to TMS Therapy'}</h2>
                 <p className="text-sm text-gray-300">
                   {t?.brainTMSBody?.approachDesc || 'Our clinic specializes in the Accelerated, Intermittent Theta-Burst Protocol. Theta Burst Stimulation (TBS) is a subtype of TMS which uses short and high frequences of theta wave stimulation pulses. Theta Burst offers similar or greater effectiveness compared to rTMS with significantly shorter treatment times, requiring only a few minutes per session. Our clinic offers a series of 10 Theta-Burst sessions a day over the course of 5 days.'}

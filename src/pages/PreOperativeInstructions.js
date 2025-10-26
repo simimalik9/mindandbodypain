@@ -25,7 +25,7 @@ function PreOperativeInstructions({ t }) {
   return (
     <>
       {/* Page Container */}
-      <div className="relative bg-cover bg-center pre-op-wrapper" style={{ backgroundImage: "url('/tealbackground.jpg')" }}>
+      <div className="relative bg-cover bg-center pre-op-wrapper" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/tealbackground.jpg'})` }}>
       <div aria-hidden="true" className="absolute inset-0 bg-teal-800/80 print-hidden" />
         {/* Hero Section */}
         <section className="relative pt-24 pb-8 print-hidden">

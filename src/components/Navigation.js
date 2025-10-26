@@ -110,7 +110,7 @@ function Navigation({
                 {/* Original Logo Image */}
                 <div className="flex items-center justify-center">
                   <img 
-                    src="/logo.png" 
+                    src={process.env.PUBLIC_URL + '/logo.png'} 
                     alt="Mind and Body Pain Clinic Logo" 
                     className="h-12 w-auto object-contain object-left"
                     style={{ marginRight: '-10px' }}

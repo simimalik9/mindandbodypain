@@ -40,7 +40,7 @@ const Blog = ({ t }) => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center text-white py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/tealbackground.jpg')" }}>
+      <section className="relative bg-cover bg-center text-white py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/tealbackground.jpg'})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold" style={{ fontFamily: "'Times New Roman', serif" }}>

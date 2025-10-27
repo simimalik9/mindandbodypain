@@ -242,7 +242,7 @@ function Neuroanatomy({ t }) {
   return (
     <>
       {/* Hero Section */}
-t      <section className="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/neuroanatomybackground.jpg'})` }}>
+      <section className="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/neuroanatomybackground.jpg'})` }}>
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-6xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
@@ -270,7 +270,7 @@ t      <section className="relative bg-cover bg-center text-white py-24 px-4 sm:
 
             {/* Column 1: Image */}
             <div className="lg:col-span-1">
-              <img src={process.env.PUBLIC_URL + '/cerebrum.png'} alt="Cerebrum" className="w-full h-auto object-cover -ml-4 md:ml-0"/>
+              <img src={process.env.PUBLIC_URL + '/Cerebrum.png'} alt="Cerebrum" className="w-full h-auto object-cover -ml-4 md:ml-0"/>
             </div>
 
             {/* Column 2: Brain Regions Selection */}

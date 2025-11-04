@@ -442,6 +442,9 @@ function PainManagement({ t }) {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center tracking-wide">
             {t?.painManagementBody?.treatmentsProcedures || 'Treatments & Procedures'}
           </h2>
+          <p className="text-sm text-gray-700 mb-8 text-center">
+            Many of our procedures are performed at our affiliated facility, <strong>Silver Creek Surgery Center</strong>, which is owned and operated by the same physician.
+          </p>
           
           <div className="grid lg:grid-cols-3 gap-8 items-start">
             <div className="max-w-xs mx-auto mt-24">

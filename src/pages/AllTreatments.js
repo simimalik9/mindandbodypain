@@ -38,6 +38,10 @@ const treatments = {
     { name: "Stem Cell Treatment", description: "A cutting-edge regenerative therapy where stem cells are harvested (often from the patient's own body) and injected into injured areas. These cells have the ability to develop into various types of tissue, promoting the healing and regeneration of damaged cartilage, tendons, or ligaments." },
     { name: "Bone Marrow Aspirate", description: "This procedure involves harvesting bone marrow from the iliac crest, which contains stem cells and growth factors. The aspirate can be used for regenerative purposes or as part of other therapeutic interventions to promote healing and tissue repair." },
   ],
+  "Diagnostic Treatments": [
+    { name: "qEEG (Quantitative EEG / Brain Mapping)", description: "A non-invasive neurological diagnostic that measures electrical activity in the brain to identify patterns associated with injury or dysfunction. qEEG provides a detailed, data-driven map of brainwave activity that can help clarify areas impacted by concussion/TBI, mood or cognitive disorders, and guide individualized treatment planning." },
+    { name: "VNG (Videonystagmography)", description: "A vestibular test that evaluates involuntary eye movements (nystagmus) using infrared video goggles. VNG helps diagnose inner ear and balance disorders contributing to dizziness, vertigo, and imbalance by assessing ocular tracking, positional responses, and caloric responses of the vestibular system." }
+  ],
   "Implantable / Device-Based Therapies": [
     { name: "Spinal Cord Stimulator Implant", description: "A small, implantable device, similar to a pacemaker, that delivers low-level electrical signals to the spinal cord. These signals interfere with and mask pain signals before they can reach the brain, providing significant relief for patients with chronic back, leg, or arm pain." },
   ],
@@ -63,6 +67,7 @@ function AllTreatments({ t }) {
   const rightCategoryNames = [
     "Nerve Blocks",
     "Regenerative / Biologic Therapies",
+    "Diagnostic Treatments",
     "Minimally Invasive Spine Procedures",
     "Implantable / Device-Based Therapies",
   ];

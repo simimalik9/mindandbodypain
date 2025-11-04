@@ -4,13 +4,6 @@ import { Container, Box, Divider } from '@mui/material';
 
 const articles = [
   {
-    title: 'These Are The Startups Merging Your Brain With AI',
-    author: 'Rob Toews, Forbes',
-    date: 'October 5, 2025',
-    summary: 'A look at emerging companies developing brain-computer interfaces and neurotechnology to integrate human cognition with artificial intelligence.',
-    url: 'https://www.forbes.com/sites/robtoews/2025/10/05/these-are-the-startups-merging-your-brain-with-ai/?utm_source=chatgpt.com'
-  },
-  {
     title: 'Pain Is Personal. Brain Stimulation Could Make Treatment That Way, Too.',
     author: 'Gina Kolata, The New York Times',
     date: 'August 14, 2025',

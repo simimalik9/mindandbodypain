@@ -762,7 +762,7 @@ function App() {
         meet: {
           heading: 'Meet Dr. Harpreet Singh',
           credentials: 'MD, Quadruple-Board Certified in Neurology, Internal Medicine, Interventional Pain Management, Brain Injury Medicine',
-          paragraph1: 'Dr. Harpreet Singh is a highly specialized, quadruple board-certified physician with over 15 years of clinical experience. A recognized TBI (Traumatic Brain Injury) expert, he combines advanced medical technologies with holistic approaches to deliver compassionate, patient-centered treatment.',
+          paragraph1: 'Dr. Harpreet Singh is a highly specialized, quadruple board-certified physician with over 25 years of clinical experience. A recognized TBI (Traumatic Brain Injury) expert, he combines advanced medical technologies with holistic approaches to deliver compassionate, patient-centered treatment.',
           paragraph2: "Dr. Singh's background spans primary care, palliative care, and academic medicine, including his role as Associate Clinical Professor at UC Davis Medical Center. Designated as a Qualified Medical Examiner (QME) by the California Division of Workers' Compensation, he also serves as an expert witness, evaluating disability and preparing medical-legal reports. With a focus on helping patients manage pain, recover from complex injuries, and restore quality of life, Dr. Singh integrates modern medical innovations with whole-person care."
         }
       },
@@ -1008,13 +1008,6 @@ function App() {
       blogPage: {
         heroTitle: 'Latest in Neurology and Pain Management',
         articles: [
-          {
-            title: 'These Are The Startups Merging Your Brain With AI',
-            author: 'Rob Toews, Forbes',
-            date: 'October 5, 2025',
-            summary: 'A look at emerging companies developing brain-computer interfaces and neurotechnology to integrate human cognition with artificial intelligence.',
-            url: 'https://www.forbes.com/sites/robtoews/2025/10/05/these-are-the-startups-merging-your-brain-with-ai/?utm_source=chatgpt.com'
-          },
           {
             title: 'Pain Is Personal. Brain Stimulation Could Make Treatment That Way, Too.',
             author: 'Gina Kolata, The New York Times',
@@ -1459,7 +1452,7 @@ function App() {
         meet: {
           heading: 'Conozca al Dr. Harpreet Singh',
           credentials: 'MD, Cuádruple Certificación en Neurología, Medicina Interna, Manejo Intervencionista del Dolor y Medicina de Lesión Cerebral',
-          paragraph1: 'El Dr. Harpreet Singh es un médico altamente especializado, con cuádruple certificación y más de 15 años de experiencia clínica. Reconocido experto en LCT (Lesión Cerebral Traumática), combina tecnologías médicas avanzadas con enfoques holísticos para brindar un tratamiento compasivo y centrado en el paciente.',
+          paragraph1: 'El Dr. Harpreet Singh es un médico altamente especializado, con cuádruple certificación y más de 25 años de experiencia clínica. Reconocido experto en LCT (Lesión Cerebral Traumática), combina tecnologías médicas avanzadas con enfoques holísticos para brindar un tratamiento compasivo y centrado en el paciente.',
           paragraph2: 'La trayectoria del Dr. Singh abarca la atención primaria, cuidados paliativos y la medicina académica, incluyendo su función como Profesor Clínico Asociado en el UC Davis Medical Center. Designado como Examinador Médico Calificado (QME) por la División de Compensación para Trabajadores de California, también actúa como perito, evaluando discapacidad y elaborando informes médico-legales. Enfocado en ayudar a los pacientes a manejar el dolor, recuperarse de lesiones complejas y restaurar su calidad de vida, el Dr. Singh integra innovaciones médicas modernas con una atención integral de la persona.'
         }
       },
@@ -2222,7 +2215,7 @@ function App() {
         meet: {
           heading: 'डॉ. हरप्रीत सिंह से मिलें',
           credentials: 'एमडी, न्यूरोलॉजी, इंटरनल मेडिसिन, इंटरवेंशनल पेन मैनेजमेंट, ब्रेन इंजरी मेडिसिन में चार बोर्ड प्रमाणन',
-          paragraph1: 'डॉ. हरप्रीत सिंह 15+ वर्षों के अनुभव वाले चार बार बोर्ड-प्रमाणित विशेषज्ञ चिकित्सक हैं। TBI (ट्रॉमैटिक ब्रेन इंजरी) के मान्यता प्राप्त विशेषज्ञ, वे उन्नत चिकित्सा तकनीकों को समग्र दृष्टिकोण के साथ जोड़कर करुणामय, रोगी-केंद्रित उपचार प्रदान करते हैं।',
+          paragraph1: 'डॉ. हरप्रीत सिंह 25+ वर्षों के अनुभव वाले चार बार बोर्ड-प्रमाणित विशेषज्ञ चिकित्सक हैं। TBI (ट्रॉमैटिक ब्रेन इंजरी) के मान्यता प्राप्त विशेषज्ञ, वे उन्नत चिकित्सा तकनीकों को समग्र दृष्टिकोण के साथ जोड़कर करुणामय, रोगी-केंद्रित उपचार प्रदान करते हैं।',
           paragraph2: "डॉ. सिंह की पृष्ठभूमि में प्राइमरी केयर, पैलिएटिव केयर और अकादमिक चिकित्सा शामिल है, जिसमें UC डेविस मेडिकल सेंटर में एसोसिएट क्लिनिकल प्रोफेसर की भूमिका भी है। कैलिफ़ोर्निया वर्कर्स' कम्पेनसेशन डिवीजन द्वारा क्वालिफाइड मेडिकल एग्ज़ामिनर (QME) नामित, वे विकलांगता का मूल्यांकन और मेडिको-लीगल रिपोर्ट तैयार करने वाले विशेषज्ञ गवाह के रूप में भी सेवा देते हैं। दर्द प्रबंधन, जटिल चोटों से उबरने और जीवन की गुणवत्ता बहाल करने पर केंद्रित, वे आधुनिक चिकित्सा नवाचारों को सम्पूर्ण-व्यक्ति देखभाल के साथ जोड़ते हैं।"
         }
       },
@@ -2604,7 +2597,7 @@ function App() {
             <p
               className="text-sm text-gray-700 leading-relaxed mb-4"
               dangerouslySetInnerHTML={{
-                __html: (t.home?.meet?.paragraph1 || 'Dr. Harpreet Singh is a highly specialized, quadruple board-certified physician with over 15 years of clinical experience. A recognized TBI (Traumatic Brain Injury) expert, he combines advanced medical technologies with holistic approaches to deliver compassionate, patient-centered treatment.')
+                __html: (t.home?.meet?.paragraph1 || 'Dr. Harpreet Singh is a highly specialized, quadruple board-certified physician with over 25 years of clinical experience. A recognized TBI (Traumatic Brain Injury) expert, he combines advanced medical technologies with holistic approaches to deliver compassionate, patient-centered treatment.')
                   .replace('highly specialized, quadruple board-certified physician', '<strong>highly specialized, quadruple board-certified physician</strong>')
                   .replace('recognized TBI (Traumatic Brain Injury) expert', '<strong>recognized TBI (Traumatic Brain Injury) expert</strong>')
               }}

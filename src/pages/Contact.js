@@ -256,11 +256,24 @@ function Contact({ t }) {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                       </div>
-                                             <div>
-                         <h4 className="font-semibold text-gray-900">{t.contact.address}</h4>
-                         <p className="text-gray-600">6010 Hellyer Ave Ste 150</p>
-                         <p className="text-gray-600">San Jose, CA 95138</p>
-                       </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900">Mind and Body Pain Clinic</h4>
+                        <p className="text-gray-600">6010 Hellyer Ave Ste 150</p>
+                        <p className="text-gray-600">San Jose, CA 95138</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg className="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900">Silver Creek Surgery Center</h4>
+                        <p className="text-gray-600">6010 Hellyer Ave Ste 100</p>
+                        <p className="text-gray-600">San Jose, CA 95138</p>
+                      </div>
                     </div>
                     
                     <div className="flex items-start space-x-4">

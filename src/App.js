@@ -2513,7 +2513,7 @@ function App() {
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
               <video
                     id="hero-video"
-                    src={process.env.PUBLIC_URL + '/FullSizeRender.MP4'}
+                    src={process.env.PUBLIC_URL + '/croppedlanding.mov'}
                 className="w-full h-full object-cover pointer-events-none"
                     autoPlay
                     loop
@@ -2707,8 +2707,10 @@ function App() {
         </div>
       </section>
 
+      
+
       {/* Disclaimer Section */}
-      <section className="py-16 bg-white">
+      <section className="pt-8 pb-16 bg-white">
         <div className="max-w-4xl mx-auto px-8 sm:px-12 lg:px-16">
           <div className="bg-white rounded-lg shadow-md p-8 border-l-4 border-teal-600">
             <h3 className="text-lg font-semibold text-gray-800 mb-4">{t.home?.disclaimerTitle || 'Medical Disclaimer'}</h3>

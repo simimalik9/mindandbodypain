@@ -2513,7 +2513,7 @@ function App() {
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
               <video
                     id="hero-video"
-                    src={process.env.PUBLIC_URL + '/croppedlanding.MOV'}
+                    src={process.env.PUBLIC_URL + '/landinghero.mp4'}
                 className="w-full h-full object-cover pointer-events-none"
                     autoPlay
                     loop

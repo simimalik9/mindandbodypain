@@ -748,6 +748,7 @@ function App() {
       
       home: {
         understandingYourHealth: 'Understanding Your Health',
+        testimonialsTitle: 'Patient Testimonials',
         tbiTitle: 'Traumatic Brain Injury',
         tbiDesc: 'Understand the causes, symptoms, and cutting-edge treatments for traumatic brain injuries.',
         tbiCta: 'Discover Treatments →',
@@ -1438,6 +1439,7 @@ function App() {
       
       home: {
         understandingYourHealth: 'Entendiendo su Salud',
+        testimonialsTitle: 'Testimonios de Pacientes',
         tbiTitle: 'Lesión Cerebral Traumática',
         tbiDesc: 'Entienda las causas, los síntomas y los tratamientos de vanguardia para las lesiones cerebrales traumáticas.',
         tbiCta: 'Descubrir Tratamientos →',
@@ -2500,8 +2502,21 @@ function App() {
 
   const HomePage = () => {
     
+    const testimonialVideoRefs = [React.useRef(null), React.useRef(null), React.useRef(null)];
+    const [testimonialPlaying, setTestimonialPlaying] = useState([false, false, false]);
+    const toggleTestimonial = (index) => {
+      const video = testimonialVideoRefs[index]?.current;
+      if (!video) return;
+      if (video.paused) {
+        video.play();
+        setTestimonialPlaying((prev) => prev.map((v, i) => (i === index ? true : v)));
+      } else {
+        video.pause();
+        setTestimonialPlaying((prev) => prev.map((v, i) => (i === index ? false : v)));
+      }
+    };
 
-    return (
+   return (
       <>
                            {/* Hero Section */}
         <section id="home" className="relative min-h-[55svh] sm:min-h-[100vh] flex items-center justify-center bg-black">
@@ -2708,6 +2723,89 @@ function App() {
       </section>
 
       
+
+      {/* Patient Testimonials Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-8 tracking-tight">
+              {t.home?.testimonialsTitle || 'Patient Testimonials'}
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-teal-600 mx-auto mb-8 rounded-full"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative rounded-lg shadow overflow-hidden bg-white">
+              <video
+                ref={testimonialVideoRefs[0]}
+                className="w-full h-64 object-cover"
+                src={process.env.PUBLIC_URL + '/testimony1.mp4'}
+                preload="metadata"
+                playsInline
+              />
+              <button
+                type="button"
+                onClick={() => toggleTestimonial(0)}
+                className="absolute inset-0 flex items-center justify-center focus:outline-none"
+                aria-label="Play video"
+              >
+                {!testimonialPlaying[0] && (
+                  <span className="flex items-center justify-center w-16 h-16 rounded-full bg-black/60 text-white shadow-lg">
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                )}
+              </button>
+            </div>
+            <div className="relative rounded-lg shadow overflow-hidden bg-white">
+              <video
+                ref={testimonialVideoRefs[1]}
+                className="w-full h-64 object-cover"
+                src={process.env.PUBLIC_URL + '/testimony2.mp4'}
+                preload="metadata"
+                playsInline
+              />
+              <button
+                type="button"
+                onClick={() => toggleTestimonial(1)}
+                className="absolute inset-0 flex items-center justify-center focus:outline-none"
+                aria-label="Play video"
+              >
+                {!testimonialPlaying[1] && (
+                  <span className="flex items-center justify-center w-16 h-16 rounded-full bg-black/60 text-white shadow-lg">
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                )}
+              </button>
+            </div>
+            <div className="relative rounded-lg shadow overflow-hidden bg-white">
+              <video
+                ref={testimonialVideoRefs[2]}
+                className="w-full h-64 object-cover"
+                src={process.env.PUBLIC_URL + '/testimony3.mp4'}
+                preload="metadata"
+                playsInline
+              />
+              <button
+                type="button"
+                onClick={() => toggleTestimonial(2)}
+                className="absolute inset-0 flex items-center justify-center focus:outline-none"
+                aria-label="Play video"
+              >
+                {!testimonialPlaying[2] && (
+                  <span className="flex items-center justify-center w-16 h-16 rounded-full bg-black/60 text-white shadow-lg">
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Disclaimer Section */}
       <section className="pt-8 pb-16 bg-white">

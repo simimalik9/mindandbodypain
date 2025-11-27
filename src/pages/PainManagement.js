@@ -611,11 +611,11 @@ function PainManagement({ t }) {
 
               {/* PRP Therapy Card */}
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{t?.painManagementBody?.prpTitle || 'PRP Therapy'}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{t?.painManagementBody?.prpTitle || 'Platelet-Rich Plasma (PRP) Therapy'}</h3>
                 <img src={process.env.PUBLIC_URL + '/PRP.jpg'} alt="PRP Therapy Diagram" className="w-48 h-auto rounded-lg object-contain float-right ml-4 mb-4" />
                 <div className="text-gray-700 text-sm space-y-4">
                   <p>
-                    {t?.painManagementBody?.prpDesc1 || 'Platelet-Rich Plasma (PRP) therapy is a regenerative treatment that uses your body’s own natural healing abilities to repair damaged tissues and reduce pain. The process begins with a small sample of your blood, which is placed in a centrifuge and spun to concentrate the platelets. These platelets are rich in growth factors — powerful proteins that stimulate tissue repair, reduce inflammation, and support healing in joints, ligaments, tendons, and discs. By injecting this concentrated solution directly into the injured or painful area, PRP helps the body accelerate its natural recovery process.'}
+                    {t?.painManagementBody?.prpDesc1 || 'Platelet-Rich Plasma (PRP) therapy is a regenerative treatment that uses your body’s own natural healing abilities to repair damaged tissues and reduce pain. The process begins with a small sample of your blood (~10 cc), which is placed in a centrifuge and spun to concentrate the platelets and plasma. The platelet-rich plasma is rich in growth factors — powerful proteins that stimulate tissue repair, reduce inflammation, and support healing in joints, ligaments, tendons, and discs. By injecting this concentrated solution directly into the injured or painful area, PRP helps the body accelerate its natural recovery process.'}
                   </p>
                   {expandedTreatment === 'prp' && (
                     <p>

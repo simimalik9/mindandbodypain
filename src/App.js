@@ -1001,7 +1001,7 @@ function App() {
           neuroTitle: 'Neurological Treatment',
           neuroDesc: 'Specialized treatment for neurological conditions such as concussions, nerve damage, and traumatic brain injuries.',
           rehabTitle: 'Rehabilitation Services',
-          rehabDesc: 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery from accident-related injuries.',
+          rehabDesc: 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery.',
           careCoordTitle: 'Care Coordination & Documentation',
           careCoordDesc: 'Clear, organized medical documentation and coordination to keep you, your family, and your care team aligned throughout your recovery.'
         },

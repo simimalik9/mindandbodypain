@@ -642,7 +642,7 @@ function App() {
         patientPortal: 'Patient Portal',
         preOperativeInstructions: 'Pre-Operative Instructions',
         patientRightsAndPolicies: 'Patient Rights and Policies',
-        workAndPersonalInjury: 'Work & Personal Injury',
+        workAndPersonalInjury: 'Insights',
         blog: 'Blog',
         education: 'Education',
         neuroanatomy: 'Neuroanatomy and Neurodegeneration',
@@ -979,23 +979,21 @@ function App() {
         questionsText: 'If you have any questions about these instructions or need to discuss your medications, please contact our office.'
       },
       workInjuryPage: {
-        heroTitle: 'Work and Personal Injury',
-        heroSubtitle: 'Specialized medical care for work and personal injury cases.',
+        heroTitle: 'Insights',
+        heroSubtitle: 'Specialized medical insights and guidance after injury.',
         servicesTitle: 'Our Services',
         servicesIntro: 'We provide comprehensive medical evaluation, diagnosis, and treatment services for work-related injuries and personal injury cases.',
         cards: {
           evalTitle: 'Comprehensive Medical Evaluation',
-          evalDesc: "Thorough assessment of injuries sustained in accidents or work-related incidents, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation for personal injury and workers' compensation cases.",
+          evalDesc: "Thorough assessment of injuries sustained in accidents, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation to support your recovery and continuity of care.",
           painTitle: 'Pain Management Treatment',
           painDesc: 'Specialized pain management protocols for accident-related injuries, including medication management, interventional procedures, and multimodal pain relief strategies.',
           neuroTitle: 'Neurological Treatment',
           neuroDesc: 'Specialized treatment for neurological conditions resulting from personal injuries, such as concussions, nerve damage, and traumatic brain injuries.',
           rehabTitle: 'Rehabilitation Services',
           rehabDesc: 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery from accident-related injuries.',
-          legalDocsTitle: 'Legal Documentation Support',
-          legalDocsDesc: "Detailed medical reports, progress notes, and expert testimony support for personal injury and workers' compensation cases. We provide comprehensive documentation supporting patients, plaintiffs, and defense in legal proceedings.",
-          legalCoordTitle: 'Legal Team Coordination',
-          legalCoordDesc: "Seamless coordination with attorneys and legal professionals to provide timely medical updates, expert opinions, and comprehensive documentation for personal injury and workers' compensation case resolution. We work with patients, plaintiffs, and defense attorneys."
+          careCoordTitle: 'Care Coordination & Documentation',
+          careCoordDesc: 'Clear, organized medical documentation and coordination to keep you, your family, and your care team aligned throughout your recovery.'
         },
         downloadsTitle: 'Downloadable Forms',
         downloadsIntro: 'Download the forms you need before your appointment.',

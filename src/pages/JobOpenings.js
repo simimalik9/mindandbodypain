@@ -19,8 +19,27 @@ function JobOpenings() {
       {/* Main Content */}
       <main className="pt-16 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 tracking-wide">Current Openings</h2>
-            <p className="text-gray-600">We do not have any job openings at the moment. Please check back later.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 tracking-wide">
+            Current Openings
+          </h2>
+
+          <div className="bg-white shadow rounded-lg p-6 max-w-3xl">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+              Spanish Medical Assistant / Front Desk
+            </h3>
+            <p className="text-gray-700 mb-4">
+              We are seeking a bilingual Spanish Medical Assistant / Front Desk team member
+              to join our clinic.
+            </p>
+            <a
+              href="https://www.indeed.com/viewjob?cmp=Mind-and-body-pain-clinic&t=Front+Desk+Agent&jk=bd32e4529a226d23&xpse=SoCM67I3m8RKo-wUgB0LbzkdCdPP&xfps=53c210fb-b39c-474d-9425-874e17b8d7cf&xkcb=SoD667M3m8ROXAyg4h0LbzkdCdPP&vjs=3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#255064] hover:bg-[#1d3e4d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#255064]"
+            >
+              View full job posting & apply on Indeed
+            </a>
+          </div>
         </div>
       </main>
  

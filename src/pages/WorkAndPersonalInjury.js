@@ -8,10 +8,10 @@ const WorkAndPersonalInjury = ({ t }) => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-            {t?.workInjuryPage?.heroTitle || 'Work and Personal Injury'}
+            {t?.workInjuryPage?.heroTitle || 'Insights'}
           </h1>
           <p className="text-xl sm:text-2xl">
-            {t?.workInjuryPage?.heroSubtitle || 'Specialized medical care for work and personal injury cases.'}
+            {t?.workInjuryPage?.heroSubtitle || 'Specialized medical insights and guidance after injury.'}
           </p>
         </div>
       </section>
@@ -31,7 +31,7 @@ const WorkAndPersonalInjury = ({ t }) => {
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.evalTitle || 'Comprehensive Medical Evaluation'}</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                {t?.workInjuryPage?.cards?.evalDesc || "Thorough assessment of injuries sustained in accidents or work-related incidents, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation for personal injury and workers' compensation cases."}
+                {t?.workInjuryPage?.cards?.evalDesc || "Thorough assessment of injuries sustained in accidents, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation to support your recovery and continuity of care."}
               </p>
             </div>
 
@@ -59,19 +59,13 @@ const WorkAndPersonalInjury = ({ t }) => {
               </p>
             </div>
 
-            {/* Legal Documentation */}
+            {/* Care Coordination & Documentation */}
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.legalDocsTitle || 'Legal Documentation Support'}</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                {t?.workInjuryPage?.cards?.careCoordTitle || 'Care Coordination & Documentation'}
+              </h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                {t?.workInjuryPage?.cards?.legalDocsDesc || "Detailed medical reports, progress notes, and expert testimony support for personal injury and workers' compensation cases. We provide comprehensive documentation supporting patients, plaintiffs, and defense in legal proceedings."}
-              </p>
-            </div>
-
-            {/* Coordination with Legal Team */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.legalCoordTitle || 'Legal Team Coordination'}</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {t?.workInjuryPage?.cards?.legalCoordDesc || "Seamless coordination with attorneys and legal professionals to provide timely medical updates, expert opinions, and comprehensive documentation for personal injury and workers' compensation case resolution. We work with patients, plaintiffs, and defense attorneys."}
+                {t?.workInjuryPage?.cards?.careCoordDesc || 'Clear, organized medical documentation and coordination to keep you, your family, and your care team aligned throughout your recovery.'}
               </p>
             </div>
           </div>

@@ -736,6 +736,15 @@ function App() {
         imageCredit: 'Some images used on this site are from Freepik.com',
         footerTitle: 'Footer'
       },
+      jobOpeningsPage: {
+        heroTitle: 'Job Openings',
+        heroSubtitle: 'Join our team and help us make a difference.',
+        currentOpeningsTitle: 'Current Openings',
+        spanishMedAssistantTitle: 'Spanish Medical Assistant / Front Desk',
+        spanishMedAssistantDescription:
+          'We are seeking a bilingual Spanish Medical Assistant / Front Desk team member to join our clinic.',
+        viewOnIndeedCta: 'View full job posting & apply on Indeed'
+      },
        accessibility: {
          title: 'Accessibility',
          increaseText: 'Increase Text',
@@ -982,14 +991,15 @@ function App() {
         heroTitle: 'Insights',
         heroSubtitle: 'Specialized medical insights and guidance after injury.',
         servicesTitle: 'Our Services',
-        servicesIntro: 'We provide comprehensive medical evaluation, diagnosis, and treatment services for work-related injuries and personal injury cases.',
+        servicesIntro: 'We provide comprehensive medical evaluation, diagnosis, and treatment services for injuries.',
         cards: {
           evalTitle: 'Comprehensive Medical Evaluation',
-          evalDesc: "Thorough assessment of injuries sustained in accidents, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation to support your recovery and continuity of care.",
+          evalDesc:
+            'Thorough assessment of injuries, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation to support your recovery and continuity of care.',
           painTitle: 'Pain Management Treatment',
           painDesc: 'Specialized pain management protocols for accident-related injuries, including medication management, interventional procedures, and multimodal pain relief strategies.',
           neuroTitle: 'Neurological Treatment',
-          neuroDesc: 'Specialized treatment for neurological conditions resulting from personal injuries, such as concussions, nerve damage, and traumatic brain injuries.',
+          neuroDesc: 'Specialized treatment for neurological conditions such as concussions, nerve damage, and traumatic brain injuries.',
           rehabTitle: 'Rehabilitation Services',
           rehabDesc: 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery from accident-related injuries.',
           careCoordTitle: 'Care Coordination & Documentation',
@@ -1331,7 +1341,7 @@ function App() {
         patientPortal: 'Portal del Paciente',
         preOperativeInstructions: 'Instrucciones Preoperatorias',
         patientRightsAndPolicies: 'Derechos y Políticas del Paciente',
-        workAndPersonalInjury: 'Trabajo & Lesiones Personales',
+        workAndPersonalInjury: 'Perspectivas',
         blog: 'Blog',
         education: 'Educación',
         neuroanatomy: 'Neuroanatomía',
@@ -1410,21 +1420,30 @@ function App() {
         heroTitle: 'Contáctanos',
         heroSubtitle: 'Estamos aquí para ayudar. Ponte en contacto con nosotros para cualquier pregunta o para programar una cita.'
       },
-             footer: {
+      footer: {
         tagline: 'Atención integral para el dolor crónico y condiciones neurológicas.',
-         description: 'Soluciones profesionales de manejo del dolor y bienestar.',
-         contact: 'Contacto',
-         address: '6010 Hellyer Ave Ste 150, San Jose, CA 95138',
-         copyright: '© 2024 Mind and Body Pain Clinic. Todos los derechos reservados.',
-         company: 'Empresa',
-         externalResources: 'Recursos Externos',
-         blog: 'Blog',
-         jobOpenings: 'Oportunidades de Empleo',
-         militaryHealthSystem: 'Sistema de Salud Militar',
-         suicideCrisisLifeline: 'Línea de Prevención del Suicidio y Crisis',
-         imageCredit: 'Algunas imágenes utilizadas en este sitio son de Freepik.com',
-         footerTitle: 'Pie de página'
-       },
+        description: 'Soluciones profesionales de manejo del dolor y bienestar.',
+        contact: 'Contacto',
+        address: '6010 Hellyer Ave Ste 150, San Jose, CA 95138',
+        copyright: '© 2024 Mind and Body Pain Clinic. Todos los derechos reservados.',
+        company: 'Empresa',
+        externalResources: 'Recursos Externos',
+        blog: 'Blog',
+        jobOpenings: 'Oportunidades de Empleo',
+        militaryHealthSystem: 'Sistema de Salud Militar',
+        suicideCrisisLifeline: 'Línea de Prevención del Suicidio y Crisis',
+        imageCredit: 'Algunas imágenes utilizadas en este sitio son de Freepik.com',
+        footerTitle: 'Pie de página'
+      },
+      jobOpeningsPage: {
+        heroTitle: 'Oportunidades de Empleo',
+        heroSubtitle: 'Únase a nuestro equipo y ayúdenos a marcar la diferencia.',
+        currentOpeningsTitle: 'Vacantes Disponibles',
+        spanishMedAssistantTitle: 'Asistente Médico(a) / Recepción (Bilingüe Español)',
+        spanishMedAssistantDescription:
+          'Estamos buscando un(a) Asistente Médico(a) / Recepcionista bilingüe en español para unirse a nuestra clínica.',
+        viewOnIndeedCta: 'Ver oferta completa y postular en Indeed'
+      },
        accessibility: {
          title: 'Accesibilidad',
          increaseText: 'Aumentar Texto',
@@ -1851,31 +1870,35 @@ function App() {
         questionsText: 'Si tiene preguntas o necesita hablar sobre sus medicamentos, comuníquese con nuestra oficina.'
       },
       workInjuryPage: {
-        heroTitle: 'Lesiones Laborales y Personales',
-        heroSubtitle: 'Atención médica especializada para casos de lesiones laborales y personales.',
-        servicesTitle: 'Nuestros Servicios',
-        servicesIntro: 'Ofrecemos evaluación médica integral, diagnóstico y tratamiento para lesiones relacionadas con el trabajo y casos de lesiones personales.',
+        heroTitle: 'Perspectivas',
+        heroSubtitle: 'Información médica especializada y orientación después de una lesión.',
+        servicesTitle: 'Nuestros servicios',
+        servicesIntro:
+          'Ofrecemos evaluación médica integral, diagnóstico y tratamiento para lesiones.',
         cards: {
-          evalTitle: 'Evaluación Médica Integral',
-          evalDesc: 'Evaluación detallada de lesiones por accidentes o incidentes laborales, incluyendo exámenes, derivaciones a estudios de imagen y documentación médica para casos de lesiones personales y compensación laboral.',
-          painTitle: 'Tratamiento del Dolor',
-          painDesc: 'Protocolos especializados de manejo del dolor que incluyen manejo de medicamentos, procedimientos intervencionistas y estrategias multimodales.',
-          neuroTitle: 'Tratamiento Neurológico',
-          neuroDesc: 'Atención especializada para condiciones neurológicas derivadas de lesiones, como conmociones, daño nervioso y LCT.',
-          rehabTitle: 'Servicios de Rehabilitación',
-          rehabDesc: 'Derivación coordinada a programas de rehabilitación, incluyendo fisioterapia, para maximizar la recuperación.',
-          legalDocsTitle: 'Soporte de Documentación Legal',
-          legalDocsDesc: 'Informes médicos detallados, notas de progreso y apoyo pericial para casos de lesiones personales y compensación laboral.',
-          legalCoordTitle: 'Coordinación con Equipo Legal',
-          legalCoordDesc: 'Coordinación con abogados para brindar actualizaciones oportunas, opiniones expertas y documentación completa.'
+          evalTitle: 'Evaluación médica integral',
+          evalDesc:
+            'Evaluación detallada de las lesiones, que incluye exámenes físicos, derivaciones para estudios de imagen y documentación médica detallada para apoyar su recuperación y la continuidad de la atención.',
+          painTitle: 'Tratamiento para el manejo del dolor',
+          painDesc:
+            'Protocolos especializados de manejo del dolor para lesiones relacionadas con accidentes, incluyendo manejo de medicamentos, procedimientos intervencionistas y estrategias multimodales de alivio del dolor.',
+          neuroTitle: 'Tratamiento neurológico',
+          neuroDesc:
+            'Tratamiento especializado para condiciones neurológicas como conmociones cerebrales, daño de nervios y lesiones cerebrales traumáticas.',
+          rehabTitle: 'Servicios de rehabilitación',
+          rehabDesc:
+            'Derivación coordinada a programas de rehabilitación, incluyendo fisioterapia y tratamientos especializados, para maximizar la recuperación tras lesiones relacionadas con accidentes.',
+          careCoordTitle: 'Coordinación de la atención y documentación',
+          careCoordDesc:
+            'Documentación médica clara y organizada, y coordinación para mantenerle a usted, a su familia y a su equipo de atención alineados durante todo el proceso de recuperación.'
         },
-        downloadsTitle: 'Formularios para Descargar',
+        downloadsTitle: 'Formularios descargables',
         downloadsIntro: 'Descargue los formularios que necesita antes de su cita.',
         forms: {
-          registration: 'Formulario de Registro',
-          referral: 'Formulario de Remisión Médica',
-          releaseTo: 'Autorización para Enviar Registros A Mind and Body Pain Clinic',
-          releaseFrom: 'Autorización para Enviar Registros DE Mind and Body Pain Clinic'
+          registration: 'Formulario de registro',
+          referral: 'Formulario de remisión médica',
+          releaseTo: 'Autorización para enviar registros A Mind and Body Pain Clinic',
+          releaseFrom: 'Autorización para enviar registros DE Mind and Body Pain Clinic'
         }
       },
       blogPage: {
@@ -2853,7 +2876,7 @@ function App() {
           <Route path="pre-operative-instructions" element={<PreOperativeInstructions t={t} />} />
           <Route path="patient-rights-and-policies" element={<PatientRightsAndPolicies t={t} />} />
           <Route path="blog" element={<Blog t={t} />} />
-          <Route path="job-openings" element={<JobOpenings />} />
+          <Route path="job-openings" element={<JobOpenings t={t} />} />
           <Route path="all-treatments" element={<AllTreatments t={t} />} />
           <Route path="neuroanatomy" element={<Neuroanatomy t={t} />} />
           <Route path="innovative-integrative-medicine" element={<InnovativeIntegrativeMedicine t={t} />} />

@@ -31,7 +31,8 @@ const WorkAndPersonalInjury = ({ t }) => {
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.evalTitle || 'Comprehensive Medical Evaluation'}</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                {t?.workInjuryPage?.cards?.evalDesc || "Thorough assessment of injuries sustained in accidents, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation to support your recovery and continuity of care."}
+                {t?.workInjuryPage?.cards?.evalDesc ||
+                  'Thorough assessment of injuries, including physical examinations, referrals for diagnostic imaging, and detailed medical documentation to support your recovery and continuity of care.'}
               </p>
             </div>
 
@@ -47,26 +48,29 @@ const WorkAndPersonalInjury = ({ t }) => {
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.neuroTitle || 'Neurological Treatment'}</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                {t?.workInjuryPage?.cards?.neuroDesc || 'Specialized treatment for neurological conditions resulting from personal injuries, such as concussions, nerve damage, and traumatic brain injuries.'}
+                {t?.workInjuryPage?.cards?.neuroDesc || 'Specialized treatment for neurological conditions such as concussions, nerve damage, and traumatic brain injuries.'}
               </p>
             </div>
 
-            {/* Rehabilitation Services */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.rehabTitle || 'Rehabilitation Services'}</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {t?.workInjuryPage?.cards?.rehabDesc || 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery from accident-related injuries.'}
-              </p>
-            </div>
+            {/* Centered bottom row */}
+            <div className="md:col-span-2 lg:col-span-3 flex flex-col md:flex-row justify-center gap-8">
+              {/* Rehabilitation Services */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 md:w-80">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.rehabTitle || 'Rehabilitation Services'}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {t?.workInjuryPage?.cards?.rehabDesc || 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery from accident-related injuries.'}
+                </p>
+              </div>
 
-            {/* Care Coordination & Documentation */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                {t?.workInjuryPage?.cards?.careCoordTitle || 'Care Coordination & Documentation'}
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {t?.workInjuryPage?.cards?.careCoordDesc || 'Clear, organized medical documentation and coordination to keep you, your family, and your care team aligned throughout your recovery.'}
-              </p>
+              {/* Care Coordination & Documentation */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 md:w-80">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {t?.workInjuryPage?.cards?.careCoordTitle || 'Care Coordination & Documentation'}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {t?.workInjuryPage?.cards?.careCoordDesc || 'Clear, organized medical documentation and coordination to keep you, your family, and your care team aligned throughout your recovery.'}
+                </p>
+              </div>
             </div>
           </div>
         </div>

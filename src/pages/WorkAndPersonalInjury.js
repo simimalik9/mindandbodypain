@@ -58,7 +58,7 @@ const WorkAndPersonalInjury = ({ t }) => {
               <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 md:w-80">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{t?.workInjuryPage?.cards?.rehabTitle || 'Rehabilitation Services'}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  {t?.workInjuryPage?.cards?.rehabDesc || 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery from accident-related injuries.'}
+                  {t?.workInjuryPage?.cards?.rehabDesc || 'Coordinated referral to rehabilitation programs including physical therapy and specialized treatment to maximize recovery.'}
                 </p>
               </div>
 
